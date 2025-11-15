@@ -64,13 +64,13 @@ img{
     max-width: var(--site-max-width);
 }
 
-.section-title{
+.Section-title{
     text-align: center;
     padding: 60px 0 100px;
     text-transform: uppercase;
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-l);
 }
-.section-title ::after{
+.Section-title::after{
     content: " ";
     width: 80px;
     height: 5px;
@@ -204,6 +204,128 @@ header .navbar{
     border-radius: var(--border-radius-circle);
 }
 
+.about-section .about-details .Section-title{
+    padding: 0;
+}
+
+.about-section .about-details{
+    max-width: 50%;
+}
+.about-section .about-details .text{
+    line-height: 30px;
+    margin: 50px 0 30px;
+    text-align: center;
+    font-size: var(--font-size-m);
+}
+
+.about-section .social-link-list{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.about-section .social-link-list .social-link{
+    color: var(--primary-color);
+    font-size: var(--font-size-l);
+    transition: 0.3s ease;
+}
+
+.about-section .social-link-list .social-link:hover{
+    color: var(--secondary-color);
+}
+
+/* Menu styling section */
+.menu-section{
+    color: var(--white-color);
+    background: var(--dark-color);
+    padding: 50px 0 100px;
+}
+.menu-section .menu-list{
+    display: flex;
+    gap: 110px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-section .menu-list .menu-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    flex-direction: column;
+    width: calc(100% / 3 - 110px);
+}
+.menu-section .menu-list .menu-item .menu-image{
+    max-width: 83%;
+    aspect-ratio: 1;
+    margin: 15px;
+    object-fit: contain;
+}
+.menu-section .menu-list .menu-item .text{
+    font-size: var(--font-size-m);
+    
+}
+.menu-section .menu-list .menu-item .name{
+    margin: 12px 0 ;
+    font-size: var(--font-size-l);
+    font-weight: var(--font-weight-semibold);
+}
+
+/* testimonials styling */
+.testimonials-section{
+    padding:50px 0 100px;
+    background: var(--light-pink-color);
+}
+.testimonials-section .slider-wrapper{
+    overflow: hidden;
+    margin: 0 60px 50px;
+}
+
+.testimonials-section .testimonial{
+    display: flex;
+    padding: 35px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+.testimonials-section .testimonial .user-image{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: var(--border-radius-circle);
+}
+.testimonials-section .testimonial .name{
+    margin-bottom: 16px;
+    font-size: var(--font-size-m);
+}
+.testimonials-section .testimonial .feedback{
+    line-height: 25px;
+}
+.testimonials-section .swiper-pagination-bullet{
+    width: 15px;
+    height: 15px;
+    opacity: 1;
+    background: var(--secondary-color);
+}
+.testimonials-section .Swiper-slider-button{
+    color: var(--secondary-color);
+    margin-top: -50px;
+    transition: 0.3s ease;
+}
+.testimonials-section .Swiper-slider-button:hover{
+    color: var(--primary-color);
+}
+
+/* Responsive styling max-width-1024px */
+@media screen and (max-width: 1024px){
+.menu-section .menu-list{
+    gap: 60px;
+}
+.menu-section .menu-list .menu-item{
+    width: calc(100% / 3 - 60px);
+}
+}
 /* Responsive styling max-width-900px */
 @media screen and (max-width: 900px){
 :root{
@@ -270,11 +392,47 @@ body.show-mobile-menu .navbar .nav-menu{
     max-width: 270px;
     margin-right: 0;
 }
-.Hero-section .hero-details :is(.Subtitle, .description){
+.Hero-section .hero-details :is(.Subtitle, .description), .about-section .about-details{
     max-width: 100%;
 }
 .Hero-section .hero-details .buttons{
     justify-content: center;
+}
+.about-section .section-content{
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+}
+.about-section .about-image-wrapper .about-image{
+    width: 100%;
+    height: 100%;
+    max-width: 250px;
+    aspect-ratio: 1;
+}
+
+.menu-section .menu-list{
+    gap: 30px;
+}
+.menu-section .menu-list .menu-item{
+    width: calc(100% / 2 - 30px);
+}
+
+}
+
+/* Responsive styling max-width-640px */
+@media screen and (max-width: 640px){
+.menu-section .menu-list{
+    gap: 20px;
+}
+.menu-section .menu-list .menu-item{
+    width: 100%;    
+}
+.testimonials-section .slider-wrapper{
+    margin: 0 0 30px;
+}
+
+.testimonials-section .Swiper-slider-button{
+    display: none;
 }
 
 }
