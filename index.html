@@ -23,19 +23,22 @@
             <a href="#" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">About</a>
+            <a href="#about" class="nav-link">About</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Menu</a>
+            <a href="#menu" class="nav-link">Menu</a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">Testimonials</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Gallery</a>
+            <a href="#testimonials" class="nav-link">Testimonials</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Contact</a>
+            <a href="#gallery" class="nav-link">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
           </li>
         </ul>
           <button id="menu-open-button" class="fas fa-bars"></button>
@@ -67,7 +70,7 @@
         </div>
       </section>
       <!-- About section -->
-       <section class="about-section">
+       <section class="about-section" id="about">
         <div class="section-content">
           <div class="about-image-wrapper">
             <img src="/images/aboutus.jpg" alt="about image" class="about-image"/>
@@ -90,7 +93,7 @@
           </div>
        </section>
        <!-- Menu Section -->
-        <section class="menu-section">
+        <section class="menu-section" id="menu">
           <h2 class="Section-title">Our Menu</h2>
           <div class="section-content">
             <ul class="menu-list">
@@ -128,7 +131,7 @@
           </div>
         </section>
         <!-- testimonals Section -->
-         <section class="testimonials-section">
+         <section class="testimonials-section" id="testimonials">
           <h2 class="Section-title">Testimonials</h2>
           <div class="section-content">
             <div class="slider-container swiper">
@@ -173,6 +176,92 @@
             </div>
           </div>
          </section>
+         <!-- Gallery section -->
+         <section class="gallery-section" id="gallery">
+          <h2 class="Section-title">Gallery</h2>
+          <div class="section-content">
+            <ul class="gallery-list">
+              <li class="gallery-item">
+                <img src="/images/gallery1.jpg" alt="Gallery" class="gallery-image">
+              </li>
+              <li class="gallery-item">
+                <img src="/images/gallery2.jpg" alt="Gallery" class="gallery-image">
+              </li>
+              <li class="gallery-item">
+                <img src="/images/Gallery3.jpg" alt="Gallery" class="gallery-image">
+              </li>
+              <li class="gallery-item">
+                <img src="/images/Gallery4.jpg" alt="Gallery" class="gallery-image">
+              </li>
+              <li class="gallery-item">
+                <img src="/images/Gallery5.webp" alt="Gallery" class="gallery-image">
+              </li>
+              <li class="gallery-item">
+                <img src="/images/Gallery6.webp" alt="Gallery" class="gallery-image">
+              </li>
+            </ul>
+          </div>
+         </section>
+         <!-- Contact section -->
+          <section class="contact-section" id="contact">
+            <h2 class="Section-title">Contact Us</h2>
+            <div class="section-content">
+              <ul class="contact-info-list">
+                <li class="contact-info">
+                  <i class="fa-solid fa-location-crosshairs"></i>
+                  <p>123 campsite Avenuem wilderness, CA 987654</p>
+                </li>
+                <li class="contact-info">
+                  <i class="fa-regular fa-envelope"></i>
+                  <p>info@coffeeshop.com</p>
+                </li>
+                <li class="contact-info">
+                  <i class="fa-solid fa-phone"></i>
+                  <p>(123) 456 78909</p>
+                </li>
+                <li class="contact-info">
+                  <i class="fa-regular fa-lock"></i>
+                  <p>Monday - Friday: 9:00AM - 5:00PM</p>
+                </li>
+                <li class="contact-info">
+                  <i class="fa-regular fa-lock"></i>
+                  <p>Saturday 10:00AM - 2:00PM</p>
+                </li>
+                <li class="contact-info">
+                  <i class="fa-regular fa-lock"></i>
+                  <p>Sunday: Closed</p>
+                </li>
+                <li class="contact-info">
+                  <i class="fa-solid fa-globe"></i>
+                  <p>www.coffeeshop.com</p>
+                </li>
+              </ul>
+              <form action="#" class="contact-form">
+                <input type="text" placeholder="Your name" class="form-input" required>
+                <input type="email" placeholder="Your email" class="form-input" required>
+                <textarea placeholder="Your Message" class="form-input form-textarea" required></textarea>
+                <button type="submit" class="button submit-button">Send Message</button>
+              </form>
+            </div>
+          </section>
+          <!-- footer section -->
+          <footer class="footer-section" id="footer">
+            <div class="section-content">
+              <p class="copyright-text">&copy; 2024 Coffee Shop. All rights reserved.</p>
+              
+              <div class="social-link-list">
+                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>  
+              </div>
+
+              <p class="policy-text">
+                <a href="#" class="privacy-link">Privacy Policy</a>
+                <span class="separator">•</span>
+                <a href="#" class="privacy-link">Refund Policy</a>
+              </p>
+            </div>
+          </footer>
     </main>
     <!-- linking Swiper script -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>

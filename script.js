@@ -1,3 +1,4 @@
+const Navlinks = document.querySelectorAll('.nav-menu .nav-link');
 const menuOpenButton = document.getElementById('menu-open-button');
 const menuCloseButton = document.getElementById('menu-close-button');
 menuOpenButton.addEventListener('click', () => {
@@ -6,7 +7,12 @@ menuOpenButton.addEventListener('click', () => {
 });
 menuCloseButton.addEventListener('click', () => menuOpenButton.click()
 );
- //initialize swiper
+// close mobile menu on navlink click
+Navlinks.forEach(navlink => {
+    navlink.addEventListener('click', () => menuOpenButton.click()
+    );
+});
+//initialize swiper
 const swiper = new Swiper('.slider-wrapper', {
   loop: true,
   grabCursor: true,
@@ -16,7 +22,7 @@ const swiper = new Swiper('.slider-wrapper', {
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
-    DynamicBullets: true,
+    dynamicBullets: true,
 },
 
   // Navigation arrows
